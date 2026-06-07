@@ -248,39 +248,39 @@ Live Demo
 - Health Recommendation: Personalized advice
 - 48-Hour Trend: Recent AQI history chart
 # 2. 🔮 Forecast Tab
-3-Day Forecast Chart: Interactive time series
-Daily Summary Cards: Color-coded predictions
-Confidence Scores: Model certainty estimates
-Download Button: Export forecasts as CSV
+- 3-Day Forecast Chart: Interactive time series
+- Daily Summary Cards: Color-coded predictions
+- Confidence Scores: Model certainty estimates
+- Download Button: Export forecasts as CSV
 # 3. 🧠 Analysis Tab
-Feature Importance: Global model insights
-SHAP Beeswarm Plot: Feature impact visualization
-Model Performance: R², RMSE, MAE metrics
-Model Details: Algorithm information
+- Feature Importance: Global model insights
+- SHAP Beeswarm Plot: Feature impact visualization
+- Model Performance: R², RMSE, MAE metrics
+- Model Details: Algorithm information
 # 4. 📈 EDA Tab
-Hourly Patterns: AQI by time of day
-Weekly Patterns: AQI by day of week
-Correlation Matrix: Pollutant relationships
-Distribution Charts: PM2.5 and PM10 histograms
+- Hourly Patterns: AQI by time of day
+- Weekly Patterns: AQI by day of week
+- Correlation Matrix: Pollutant relationships
+- Distribution Charts: PM2.5 and PM10 histograms
 ## AQI Categories
 <img width="949" height="412" alt="image" src="https://github.com/user-attachments/assets/51644639-ff29-49bf-a901-ee3c2c57447e" />
 ## 📉 Model Performance
-Evaluation Metrics
+-Evaluation Metrics
 <img width="920" height="203" alt="image" src="https://github.com/user-attachments/assets/03f0454c-140f-48d9-8764-bac509820ab2" />
 ## Performance Analysis
-✅ Good R² Score: Model explains 72.2% of AQI variability
-✅ Reasonable RMSE: Average error of ~17 AQI points
-✅ Low MAE: Median error of ~13 AQI points
-⚠️ Room for Improvement: Could benefit from more features (weather, wind)
+- ✅ Good R² Score: Model explains 72.2% of AQI variability
+- ✅ Reasonable RMSE: Average error of ~17 AQI points
+- ✅ Low MAE: Median error of ~13 AQI points
+- ⚠️ Room for Improvement: Could benefit from more features (weather, wind)
 ## Comparison with Baseline
 <img width="913" height="200" alt="image" src="https://github.com/user-attachments/assets/91d6d7b3-2498-437d-9dcb-297ed35e2e9e" />
 - Our model outperforms baseline approaches by 7-14% in R² score.
 
 ### 🔍 Key Findings
  ## 1. PM2.5 is the Strongest Predictor
-Fine particulate matter (PM2.5) has the highest correlation with AQI
-SHAP analysis confirms PM2.5 contributes most to predictions
-This aligns with EPA standards where PM2.5 is the primary pollutant
+- Fine particulate matter (PM2.5) has the highest correlation with AQI
+- SHAP analysis confirms PM2.5 contributes most to predictions
+- This aligns with EPA standards where PM2.5 is the primary pollutant
 ## 2. Diurnal Patterns Exist
 AQI peaks during morning (7-9 AM) and evening (6-8 PM) rush hours
 Lowest AQI typically occurs between 2-4 AM
@@ -340,33 +340,33 @@ Policy recommendation engine
 ## Executive Summary
 This project successfully implements a complete, serverless Machine Learning pipeline for Air Quality Index forecasting in Islamabad, Pakistan. The system demonstrates best practices in MLOps, from data collection to deployment.
 ## Achievements
--✅ End-to-End Pipeline: Fully automated data collection, processing, and prediction
-✅ Production-Ready: Deployed on Streamlit Cloud with 99.9% uptime
-✅ Explainable AI: SHAP integration for model transparency
-✅ User-Friendly: Intuitive dashboard with health recommendations
-✅ Scalable: Architecture supports easy addition of new cities
+- ✅ End-to-End Pipeline: Fully automated data collection, processing, and prediction
+- ✅ Production-Ready: Deployed on Streamlit Cloud with 99.9% uptime
+- ✅ Explainable AI: SHAP integration for model transparency
+- ✅ User-Friendly: Intuitive dashboard with health recommendations
+- ✅ Scalable: Architecture supports easy addition of new cities
 ## Challenges Overcome
-API Integration: Successfully integrated Open-Meteo API without authentication
-Feature Engineering: Created meaningful features from raw time series data
-Model Selection: Chose Random Forest for balance of performance and interpretability
-Deployment: Achieved zero-downtime deployment on Streamlit Cloud
-Visualization: Created interactive, publication-quality charts
+- API Integration: Successfully integrated Open-Meteo API without authentication
+- Feature Engineering: Created meaningful features from raw time series data
+- Model Selection: Chose Random Forest for balance of performance and interpretability
+- Deployment: Achieved zero-downtime deployment on Streamlit Cloud
+- Visualization: Created interactive, publication-quality charts
 ## Lessons Learned
-Data Quality: Clean, well-structured data is crucial for model performance
-Feature Engineering: Domain knowledge (air quality science) improves features
-Model Interpretability: SHAP values build user trust in predictions
-User Experience: Simple, intuitive interfaces increase adoption
-Monitoring: Continuous monitoring catches data drift early
+- Data Quality: Clean, well-structured data is crucial for model performance
+- Feature Engineering: Domain knowledge (air quality science) improves features
+- Model Interpretability: SHAP values build user trust in predictions
+- User Experience: Simple, intuitive interfaces increase adoption
+- Monitoring: Continuous monitoring catches data drift early
 ## Impact
-Public Health: Helps residents make informed decisions about outdoor activities
-Environmental Awareness: Visualizes air quality trends and patterns
-Educational: Demonstrates practical MLOps implementation
-Research: Provides baseline for future air quality studies in Islamabad
+- Public Health: Helps residents make informed decisions about outdoor activities
+- Environmental Awareness: Visualizes air quality trends and patterns
+- Educational: Demonstrates practical MLOps implementation
+- Research: Provides baseline for future air quality studies in Islamabad
 # 👤 Author
-Zainab Nadeem
-Student at Fast
-Connect With Me
-📧 Email: zainabnadeem735@gmail.com
+- Zainab Nadeem
+- Student at Fast
+- Connect With Me
+- 📧 Email: zainabnadeem735@gmail.com
 
 
 
