@@ -551,37 +551,88 @@ with tab3:
         st.plotly_chart(fig_imp, use_container_width=True)
         
         # SHAP beeswarm plot
+                # SHAP Beeswarm Plot - FIXED VERSION
         st.markdown("#### 🐝 SHAP Beeswarm Plot")
         st.write("Each dot represents a prediction. Red = high feature value, Blue = low feature value.")
         
-        fig_shap = go.Figure()
+        # Create a cleaner beeswarm plot using Plotly
+        fig_beeswarm = go.Figure()
         
-        for idx, feature in enumerate(features_to_use):
-            fig_shap.add_trace(go.Scatter(
-                x=shap_values[:, idx],
-                y=[feature] * len(shap_values),
+        # Sort features by importance
+        feature_order = np.argsort(np.mean(np.abs(shap_values), axis=0))[::-1]
+        
+        for i, feature_idx in enumerate(feature_order[:8]):  # Show top 8 features
+            feature = features_to_use[feature_idx]
+            shap_vals = shap_values[:, feature_idx]
+            feature_vals = X_sample[feature].values
+            
+            # Normalize feature values for coloring (0 to 1)
+            feat_min = feature_vals.min()
+            feat_max = feature_vals.max()
+            if feat_max - feat_min > 0:
+                norm_vals = (feature_vals - feat_min) / (feat_max - feat_min)
+            else:
+                norm_vals = np.zeros_like(feature_vals)
+            
+            # Create custom colorscale from blue to red
+            colors = []
+            for val in norm_vals:
+                if val < 0.5:
+                    # Blue to white
+                    r = int(255 * (1 - val * 2))
+                    g = int(255 * (1 - val * 2))
+                    b = 255
+                else:
+                    # White to red
+                    r = 255
+                    g = int(255 * (1 - (val - 0.5) * 2))
+                    b = int(255 * (1 - (val - 0.5) * 2))
+                colors.append(f'rgb({r},{g},{b})')
+            
+            # Create hover text as a list
+            hover_text = []
+            for j in range(len(shap_vals)):
+                hover_text.append(
+                    f"<b>{feature}</b><br>"
+                    f"SHAP Value: {shap_vals[j]:.2f}<br>"
+                    f"Feature Value: {feature_vals[j]:.2f}"
+                )
+            
+            fig_beeswarm.add_trace(go.Scatter(
+                x=shap_vals,
+                y=[feature] * len(shap_vals),
                 mode='markers',
                 marker=dict(
-                    size=10,
-                    color=X_sample[feature],
-                    colorscale='RdBu',
-                    showscale=True,
-                    colorbar=dict(title=feature)
+                    size=8,
+                    color=colors,
+                    line=dict(color='white', width=0.5)
                 ),
                 name=feature,
-                showlegend=False
+                showlegend=False,
+                hovertext=hover_text,
+                hoverinfo='text'
             ))
         
-        fig_shap.update_layout(
+        fig_beeswarm.update_layout(
             height=500,
             paper_bgcolor='rgba(0,0,0,0)',
             plot_bgcolor='rgba(255,255,255,0.95)',
-            font=dict(color='#2c3e50', size=12),
-            xaxis=dict(title='SHAP Value', gridcolor='rgba(128,128,128,0.2)'),
-            yaxis=dict(gridcolor='rgba(128,128,128,0.2)')
+            font=dict(color='#2c3e50', size=11),
+            xaxis=dict(
+                title='SHAP Value (impact on model output)',
+                gridcolor='rgba(128,128,128,0.2)',
+                zerolinecolor='rgba(128,128,128,0.5)',
+                zerolinewidth=2
+            ),
+            yaxis=dict(
+                gridcolor='rgba(128,128,128,0.2)',
+                title='Feature'
+            ),
+            showlegend=False,
+            margin=dict(l=120, r=40, t=40, b=60)
         )
-        st.plotly_chart(fig_shap, use_container_width=True)
-    
+        
+        st.plotly_chart(fig_beeswarm, use_container_width=True)
     # Model performance
     st.markdown("### 📈 Model Performance")
     col1, col2, col3 = st.columns(3)
