@@ -1,4 +1,4 @@
-# aqi_by_zainab_nadeem
+# AQI_by_zainab_nadeem
 # Pearls AQI Predictor - Final Report
 
 ## Executive Summary
