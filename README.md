@@ -267,12 +267,16 @@ Live Demo
 ## 📉 Model Performance
 -Evaluation Metrics
 <img width="920" height="203" alt="image" src="https://github.com/user-attachments/assets/03f0454c-140f-48d9-8764-bac509820ab2" />
+
 ## Performance Analysis
+
 - ✅ Good R² Score: Model explains 72.2% of AQI variability
 - ✅ Reasonable RMSE: Average error of ~17 AQI points
 - ✅ Low MAE: Median error of ~13 AQI points
 - ⚠️ Room for Improvement: Could benefit from more features (weather, wind)
+  
 ## Comparison with Baseline
+
 <img width="913" height="200" alt="image" src="https://github.com/user-attachments/assets/91d6d7b3-2498-437d-9dcb-297ed35e2e9e" />
 - Our model outperforms baseline approaches by 7-14% in R² score.
 
