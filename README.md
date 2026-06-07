@@ -207,43 +207,43 @@ bash
 -The application will open in your browser at http://localhost:8501
 
 # Training a New Model
-If you want to retrain the model with fresh data:
-Step 1: Fetch latest data and engineer features
-python feature_pipeline.py
+- If you want to retrain the model with fresh data:
+- Step 1: Fetch latest data and engineer features
+- python feature_pipeline.py
 
-Step 2: Train the model
-python training_pipeline.py
-Customizing for Your City
-Edit the coordinates in feature_pipeline.py:
-CITY_NAME = "Your City" # Mine was Islamabad
-CITY_LAT = 33.6844  # Your latitude
-CITY_LON = 73.0479  # Your longitude
+- Step 2: Train the model
+- python training_pipeline.py
+- Customizing for Your City
+- Edit the coordinates in feature_pipeline.py:
+- CITY_NAME = "Your City" # Mine was Islamabad
+- CITY_LAT = 33.6844  # Your latitude
+- CITY_LON = 73.0479  # Your longitude
 
-📊 Data Pipeline
-Data Source
-Open-Meteo Air Quality API
-🌐 Website: https://open-meteo.com/
-💰 Cost: Completely free, no API key required
-📈 Coverage: Global, hourly resolution
-🔄 Updates: Every hour
-Data Collection Process
-Historical Data Fetch
-Retrieves 90 days of hourly air quality data
-Total: 2,160 data points (90 days × 24 hours)
-Variables: US AQI, PM2.5, PM10, NO₂, O₃
-Feature Engineering
+- 📊 Data Pipeline
+- Data Source
+- Open-Meteo Air Quality API
+- 🌐 Website: https://open-meteo.com/
+- 💰 Cost: Completely free, no API key required
+- 📈 Coverage: Global, hourly resolution
+- 🔄 Updates: Every hour
+- Data Collection Process
+- Historical Data Fetch
+-Retrieves 90 days of hourly air quality data
+- Total: 2,160 data points (90 days × 24 hours)
+-Variables: US AQI, PM2.5, PM10, NO₂, O₃
+-Feature Engineering
 <img width="904" height="571" alt="image" src="https://github.com/user-attachments/assets/3dcc0a91-437a-4b0a-ad67-2bbec06b8a2c" />
-Target Variable
-target_aqi_24h: AQI value 24 hours in the future
-Used for training the predictive model
-🧠 Model Training
-Algorithm: Random Forest Regressor
-Why Random Forest?
-✅ Handles non-linear relationships well
-✅ Robust to outliers
-✅ No feature scaling required
-✅ Provides feature importance
-✅ Works well with mixed feature types
+-Target Variable
+-target_aqi_24h: AQI value 24 hours in the future
+- Used for training the predictive model
+- 🧠 Model Training
+- Algorithm: Random Forest Regressor
+-Why Random Forest?
+-✅ Handles non-linear relationships well
+-✅ Robust to outliers
+-✅ No feature scaling required
+-✅ Provides feature importance
+-✅ Works well with mixed feature types
 Hyperparameters
 RandomForestRegressor(
     n_estimators=100,      # Number of trees
