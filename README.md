@@ -35,4 +35,4 @@ A serverless ML pipeline that forecasts AQI for Islamabad for the next 3 days us
 - Interactive EDA charts
 
 ## Live Dashboard
-[Insert your Streamlit Cloud URL here]
+[https://aqibyzainabnadeem-nqp79mn4da2ieucv2smgag.streamlit.app/]
