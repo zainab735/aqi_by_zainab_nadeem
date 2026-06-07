@@ -164,36 +164,36 @@ AQI_by_zainab_nadeem/
 -pip (Python package manager)
 -Step-by-Step Setup
 -1.Clone the Repository
-bash
+
 -git clone https://github.com/Zainab_735/AQI_by_zainab_nadeem.git
 -cd AQI_by_zainab_nadeem
 -2.Create Virtual Environment (Recommended)
-bash
-# Windows
+
+##  Windows
 -python -m venv venv
 -venv\Scripts\activate
 
-# macOS/Linux
--python3 -m venv venv
--source venv/bin/activate
--3.Install Dependencies
--pip install -r requirements.txt
--4.Verify Installation
--python -c "import streamlit, sklearn, shap, plotly; print('✅ All packages installed!')"
+## macOS/Linux
+
+- python3 -m venv venv
+- source venv/bin/activate
+- 3.Install Dependencies
+- pip install -r requirements.txt
+- 4.Verify Installation
+- python -c "import streamlit, sklearn, shap, plotly; print('✅ All packages installed!')"
 
  ## Usage
  
--Running the Dashboard Locally
-bash
+- Running the Dashboard Locally
 - streamlit run dashboard.py
--The application will open in your browser at http://localhost:8501
+- The application will open in your browser at http://localhost:8501
 
 # Training a New Model
 - If you want to retrain the model with fresh data:
-- Step 1: Fetch latest data and engineer features
+  ## Step 1: Fetch latest data and engineer features
 - python feature_pipeline.py
 
-- Step 2: Train the model
+  ## Step 2: Train the model
 - python training_pipeline.py
 - Customizing for Your City
 - Edit the coordinates in feature_pipeline.py:
