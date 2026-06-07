@@ -18,9 +18,10 @@ A serverless ML pipeline that forecasts AQI for Islamabad for the next 3 days us
 - Total: 2,160 hourly data points
 
 ## Model Performance
-- **RMSE**: [Copy from Colab output]
-- **MAE**: [Copy from Colab output]
-- **R²**: [Copy from Colab output]
+- **RMSE**: [17.28]
+- **MAE**: [13.26]
+- **R²**:  [0.722]
+
 
 ## Key Findings
 1. PM2.5 is the strongest predictor of AQI
