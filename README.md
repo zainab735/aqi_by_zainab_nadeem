@@ -313,8 +313,10 @@ Live Demo
 - PM2.5 and PM10 are highly correlated (r > 0.8)
 - NO₂ and O₃ show inverse relationship (photochemical reactions)
 - All pollutants contribute to overall AQI calculation
-### 🚀 Future Improvements
-## Short-term Enhancements
+  
+## 🚀 Future Improvements
+
+### Short-term Enhancements
 - Additional Features
 Weather data (temperature, humidity, wind speed/direction)
 Traffic density data
@@ -328,7 +330,8 @@ Ensemble methods combining multiple models
 7-day forecast instead of 3-day
 Confidence intervals for predictions
 Probabilistic forecasting
-## Long-term Vision
+
+### Long-term Vision
 - Multi-city Support
 Allow users to select different cities
 City-specific model training
@@ -350,32 +353,41 @@ Comparative analysis between cities
   Health impact assessment
   Economic cost of pollution
   Policy recommendation engine
-### 📄 Final Report
-## Executive Summary
+  
+## 📄 Final Report
+
+### Executive Summary
 This project successfully implements a complete, serverless Machine Learning pipeline for Air Quality Index forecasting in Islamabad, Pakistan. The system demonstrates best practices in MLOps, from data collection to deployment.
-## Achievements
+
+### Achievements
 - ✅ End-to-End Pipeline: Fully automated data collection, processing, and prediction
 - ✅ Production-Ready: Deployed on Streamlit Cloud with 99.9% uptime
 - ✅ Explainable AI: SHAP integration for model transparency
 - ✅ User-Friendly: Intuitive dashboard with health recommendations
 - ✅ Scalable: Architecture supports easy addition of new cities
-## Challenges Overcome
+  
+### Challenges Overcome
 - API Integration: Successfully integrated Open-Meteo API without authentication
 - Feature Engineering: Created meaningful features from raw time series data
 - Model Selection: Chose Random Forest for balance of performance and interpretability
 - Deployment: Achieved zero-downtime deployment on Streamlit Cloud
 - Visualization: Created interactive, publication-quality charts
-## Lessons Learned
+  
+### Lessons Learned
+
 - Data Quality: Clean, well-structured data is crucial for model performance
 - Feature Engineering: Domain knowledge (air quality science) improves features
 - Model Interpretability: SHAP values build user trust in predictions
 - User Experience: Simple, intuitive interfaces increase adoption
 - Monitoring: Continuous monitoring catches data drift early
-## Impact
+  
+### Impact
+
 - Public Health: Helps residents make informed decisions about outdoor activities
 - Environmental Awareness: Visualizes air quality trends and patterns
 - Educational: Demonstrates practical MLOps implementation
 - Research: Provides baseline for future air quality studies in Islamabad
+  
 # 👤 Author
 - Zainab Nadeem
 - Student at Fast
