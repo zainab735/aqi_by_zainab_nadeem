@@ -264,7 +264,9 @@ Live Demo
 - Distribution Charts: PM2.5 and PM10 histograms
 ## AQI Categories
 <img width="949" height="412" alt="image" src="https://github.com/user-attachments/assets/51644639-ff29-49bf-a901-ee3c2c57447e" />
+
 ## 📉 Model Performance
+
 -Evaluation Metrics
 <img width="920" height="203" alt="image" src="https://github.com/user-attachments/assets/03f0454c-140f-48d9-8764-bac509820ab2" />
 
@@ -278,6 +280,7 @@ Live Demo
 ## Comparison with Baseline
 
 <img width="913" height="200" alt="image" src="https://github.com/user-attachments/assets/91d6d7b3-2498-437d-9dcb-297ed35e2e9e" />
+
 - Our model outperforms baseline approaches by 7-14% in R² score.
 
 ### 🔍 Key Findings
