@@ -155,7 +155,9 @@ requests==2.31.0
 ## Project Structure
 AQI_by_zainab_nadeem/
 <img width="786" height="578" alt="image" src="https://github.com/user-attachments/assets/528bc49f-ef59-43e0-802e-e444cd6f4260" />
-💾 Installation
+
+## 💾 Installation
+
 -Prerequisites
 -Python 3.9 or higher
 -Git
@@ -178,7 +180,9 @@ bash
 -pip install -r requirements.txt
 -4.Verify Installation
 -python -c "import streamlit, sklearn, shap, plotly; print('✅ All packages installed!')"
+
  ## Usage
+ 
 -Running the Dashboard Locally
 bash
 - streamlit run dashboard.py
@@ -209,8 +213,10 @@ bash
 -Retrieves 90 days of hourly air quality data
 - Total: 2,160 data points (90 days × 24 hours)
 -Variables: US AQI, PM2.5, PM10, NO₂, O₃
--Feature Engineering
+-Feature 
+
 <img width="904" height="571" alt="image" src="https://github.com/user-attachments/assets/3dcc0a91-437a-4b0a-ad67-2bbec06b8a2c" />
+
 -Target Variable
 -target_aqi_24h: AQI value 24 hours in the future
 - Used for training the predictive model
@@ -223,7 +229,7 @@ bash
 - ✅ Provides feature importance
 - ✅ Works well with mixed feature types
   
-# Hyperparameters
+## Hyperparameters
 RandomForestRegressor(
     -  n_estimators=100,      # Number of trees
    -  random_state=42,       # Reproducibility
