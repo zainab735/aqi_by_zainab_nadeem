@@ -154,29 +154,7 @@ requests==2.31.0
 
 ## Project Structure
 AQI_by_zainab_nadeem/
-│
-├── 📊 Data & Models/
-│   ├── aqi_data.csv              # Historical AQI data (90 days)
-│   ├── aqi_model.pkl             # Trained Random Forest model
-│   └── feature_names.json        # List of features used
-│
-├── 💻 Source Code/
-│   ├── dashboard.py              # Main Streamlit application
-│   ├── feature_pipeline.py       # Data collection & feature engineering
-│   ├── training_pipeline.py      # Model training script
-│   └── backfill.py               # Historical data backfill
-│
-├── 📝 Documentation/
-│   ├── README.md                 # This file
-│   └── REPORT.md                 # Detailed project report
-│
-├── ⚙️ Configuration/
-│   ├── requirements.txt          # Python dependencies
-│   └── .gitignore               # Git ignore file
-│
-└── 🚀 Deployment/
-    └── .streamlit/              # Streamlit configuration
-        └── config.toml
+<img width="786" height="578" alt="image" src="https://github.com/user-attachments/assets/528bc49f-ef59-43e0-802e-e444cd6f4260" />
 💾 Installation
 -Prerequisites
 -Python 3.9 or higher
@@ -239,14 +217,24 @@ bash
 - 🧠 Model Training
 - Algorithm: Random Forest Regressor
 # Why Random Forest?
+
 - ✅ Handles non-linear relationships well
 - ✅ Robust to outliers
 - ✅ No feature scaling required
 - ✅ Provides feature importance
 - ✅ Works well with mixed feature types
+  
 # Hyperparameters
 RandomForestRegressor(
-    n_estimators=100,      # Number of trees
-    random_state=42,       # Reproducibility
-    n_jobs=-1              # Use all CPU cores
+    -  n_estimators=100,      # Number of trees
+   -  random_state=42,       # Reproducibility
+   -  n_jobs=-1              # Use all CPU cores
 )
+
+## Training Process
+-Data Split: 80% training, 20% testing
+-Training: Model learns patterns from 1,728 samples
+-Validation: Evaluated on 432 test samples
+-Serialization: Saved as aqi_model.pkl using joblib
+## 📈 Dashboard
+Live Demo
