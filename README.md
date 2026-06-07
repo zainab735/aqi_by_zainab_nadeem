@@ -238,10 +238,10 @@ RandomForestRegressor(
 )
 
 ## Training Process
--Data Split: 80% training, 20% testing
--Training: Model learns patterns from 1,728 samples
--Validation: Evaluated on 432 test samples
--Serialization: Saved as aqi_model.pkl using joblib
+- Data Split: 80% training, 20% testing
+- Training: Model learns patterns from 1,728 samples
+- Validation: Evaluated on 432 test samples
+- Serialization: Saved as aqi_model.pkl using joblib
 
 ## 📈 Dashboard
 Live Demo
