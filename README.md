@@ -238,13 +238,13 @@ bash
 - Used for training the predictive model
 - 🧠 Model Training
 - Algorithm: Random Forest Regressor
--Why Random Forest?
--✅ Handles non-linear relationships well
--✅ Robust to outliers
--✅ No feature scaling required
--✅ Provides feature importance
--✅ Works well with mixed feature types
-Hyperparameters
+# Why Random Forest?
+- ✅ Handles non-linear relationships well
+- ✅ Robust to outliers
+- ✅ No feature scaling required
+- ✅ Provides feature importance
+- ✅ Works well with mixed feature types
+# Hyperparameters
 RandomForestRegressor(
     n_estimators=100,      # Number of trees
     random_state=42,       # Reproducibility
