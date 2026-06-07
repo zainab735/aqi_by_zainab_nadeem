@@ -272,9 +272,9 @@ Evaluation Metrics
 ⚠️ Room for Improvement: Could benefit from more features (weather, wind)
 ## Comparison with Baseline
 <img width="913" height="200" alt="image" src="https://github.com/user-attachments/assets/91d6d7b3-2498-437d-9dcb-297ed35e2e9e" />
-Our model outperforms baseline approaches by 7-14% in R² score.
-.
-## 🔍 Key Findings
+- Our model outperforms baseline approaches by 7-14% in R² score.
+
+### 🔍 Key Findings
  ## 1. PM2.5 is the Strongest Predictor
 Fine particulate matter (PM2.5) has the highest correlation with AQI
 SHAP analysis confirms PM2.5 contributes most to predictions
@@ -297,7 +297,7 @@ Summer months show better air quality dispersion
 PM2.5 and PM10 are highly correlated (r > 0.8)
 NO₂ and O₃ show inverse relationship (photochemical reactions)
 All pollutants contribute to overall AQI calculation
-## 🚀 Future Improvements
+### 🚀 Future Improvements
 ## Short-term Enhancements
 Additional Features
 Weather data (temperature, humidity, wind speed/direction)
@@ -334,11 +334,11 @@ Pollution source identification
 Health impact assessment
 Economic cost of pollution
 Policy recommendation engine
-## 📄 Final Report
+### 📄 Final Report
 ## Executive Summary
 This project successfully implements a complete, serverless Machine Learning pipeline for Air Quality Index forecasting in Islamabad, Pakistan. The system demonstrates best practices in MLOps, from data collection to deployment.
-Achievements
-✅ End-to-End Pipeline: Fully automated data collection, processing, and prediction
+## Achievements
+-✅ End-to-End Pipeline: Fully automated data collection, processing, and prediction
 ✅ Production-Ready: Deployed on Streamlit Cloud with 99.9% uptime
 ✅ Explainable AI: SHAP integration for model transparency
 ✅ User-Friendly: Intuitive dashboard with health recommendations
