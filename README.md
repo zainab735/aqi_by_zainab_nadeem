@@ -217,12 +217,13 @@ bash
 
 <img width="904" height="571" alt="image" src="https://github.com/user-attachments/assets/3dcc0a91-437a-4b0a-ad67-2bbec06b8a2c" />
 
--Target Variable
+## Target Variable
 -target_aqi_24h: AQI value 24 hours in the future
 - Used for training the predictive model
-- 🧠 Model Training
+## 🧠 Model Training
 - Algorithm: Random Forest Regressor
-# Why Random Forest?
+  
+## Why Random Forest?
 - ✅ Handles non-linear relationships well
 - ✅ Robust to outliers
 - ✅ No feature scaling required
@@ -247,23 +248,23 @@ Live Demo
 🔗 Visit: https://aqibyzainabnadeem-nqp79mn4da2ieucv2smgag.streamlit.app/
 - Dashboard Sections
 
-# 1. 📊 Dashboard Tab
+## 1. 📊 Dashboard Tab
 - Current AQI Gauge: Visual indicator with color zones
 - Status Badge: Good/Moderate/Unhealthy/Hazardous
 - Quick Metrics: PM2.5, PM10, NO₂, O₃ levels
 - Health Recommendation: Personalized advice
 - 48-Hour Trend: Recent AQI history chart
-# 2. 🔮 Forecast Tab
+## 2. 🔮 Forecast Tab
 - 3-Day Forecast Chart: Interactive time series
 - Daily Summary Cards: Color-coded predictions
 - Confidence Scores: Model certainty estimates
 - Download Button: Export forecasts as CSV
-# 3. 🧠 Analysis Tab
+## 3. 🧠 Analysis Tab
 - Feature Importance: Global model insights
 - SHAP Beeswarm Plot: Feature impact visualization
 - Model Performance: R², RMSE, MAE metrics
 - Model Details: Algorithm information
-# 4. 📈 EDA Tab
+## 4. 📈 EDA Tab
 - Hourly Patterns: AQI by time of day
 - Weekly Patterns: AQI by day of week
 - Correlation Matrix: Pollutant relationships
