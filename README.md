@@ -141,7 +141,7 @@ This project demonstrates a production-ready ML pipeline that:
 | **Hosting** | Streamlit Cloud | Free deployment |
 | **Version Control** | Git, GitHub | Code management |
 
-### Python Libraries
+## Python Libraries
 streamlit==1.28.0
 pandas==2.1.0
 numpy==1.24.0
@@ -152,7 +152,7 @@ matplotlib==3.8.0
 joblib==1.3.0
 requests==2.31.0
 
-### Project Structure
+## Project Structure
 AQI_by_zainab_nadeem/
 │
 ├── 📊 Data & Models/
@@ -178,40 +178,40 @@ AQI_by_zainab_nadeem/
     └── .streamlit/              # Streamlit configuration
         └── config.toml
 💾 Installation
-Prerequisites
-Python 3.9 or higher
-Git
-pip (Python package manager)
-Step-by-Step Setup
-1.Clone the Repository
+-Prerequisites
+-Python 3.9 or higher
+-Git
+-pip (Python package manager)
+-Step-by-Step Setup
+-1.Clone the Repository
 bash
-git clone https://github.com/Zainab_735/AQI_by_zainab_nadeem.git
-cd AQI_by_zainab_nadeem
-2.Create Virtual Environment (Recommended)
+-git clone https://github.com/Zainab_735/AQI_by_zainab_nadeem.git
+-cd AQI_by_zainab_nadeem
+-2.Create Virtual Environment (Recommended)
 bash
 # Windows
-python -m venv venv
-venv\Scripts\activate
+-python -m venv venv
+-venv\Scripts\activate
 
 # macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-3.Install Dependencies
-pip install -r requirements.txt
-4.Verify Installation
-python -c "import streamlit, sklearn, shap, plotly; print('✅ All packages installed!')"
- Usage
-Running the Dashboard Locally
+-python3 -m venv venv
+-source venv/bin/activate
+-3.Install Dependencies
+-pip install -r requirements.txt
+-4.Verify Installation
+-python -c "import streamlit, sklearn, shap, plotly; print('✅ All packages installed!')"
+ ## Usage
+-Running the Dashboard Locally
 bash
- streamlit run dashboard.py
-The application will open in your browser at http://localhost:8501
+- streamlit run dashboard.py
+-The application will open in your browser at http://localhost:8501
 
-### Training a New Model
+# Training a New Model
 If you want to retrain the model with fresh data:
-# Step 1: Fetch latest data and engineer features
+Step 1: Fetch latest data and engineer features
 python feature_pipeline.py
 
-# Step 2: Train the model
+Step 2: Train the model
 python training_pipeline.py
 Customizing for Your City
 Edit the coordinates in feature_pipeline.py:
@@ -245,3 +245,8 @@ Why Random Forest?
 ✅ Provides feature importance
 ✅ Works well with mixed feature types
 Hyperparameters
+RandomForestRegressor(
+    n_estimators=100,      # Number of trees
+    random_state=42,       # Reproducibility
+    n_jobs=-1              # Use all CPU cores
+)
