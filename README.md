@@ -290,26 +290,26 @@ Live Demo
 
 - Our model outperforms baseline approaches by 7-14% in R² score.
 
-### 🔍 Key Findings
- ## 1. PM2.5 is the Strongest Predictor
+## 🔍 Key Findings
+ ### 1. PM2.5 is the Strongest Predictor
 - Fine particulate matter (PM2.5) has the highest correlation with AQI
 - SHAP analysis confirms PM2.5 contributes most to predictions
 - This aligns with EPA standards where PM2.5 is the primary pollutant
-## 2. Diurnal Patterns Exist
+### 2. Diurnal Patterns Exist
 - AQI peaks during morning (7-9 AM) and evening (6-8 PM) rush hours
 - Lowest AQI typically occurs between 2-4 AM
 - Pattern suggests traffic-related pollution dominates
-## 3. Weekend Effect
+### 3. Weekend Effect
 - Weekend AQI is typically 10-15% lower than weekdays
 - Reduced industrial and traffic activity on weekends
 - Saturday and Sunday show similar patterns
-## 4. Seasonal Variation
+### 4. Seasonal Variation
 - Winter months (Nov-Feb) show higher AQI due to:
 - Temperature inversions trapping pollutants
 - Increased heating emissions
 - Reduced atmospheric mixing
 - Summer months show better air quality dispersion
-## 5. Pollutant Correlations
+### 5. Pollutant Correlations
 - PM2.5 and PM10 are highly correlated (r > 0.8)
 - NO₂ and O₃ show inverse relationship (photochemical reactions)
 - All pollutants contribute to overall AQI calculation
