@@ -235,16 +235,18 @@ RandomForestRegressor(
 -Training: Model learns patterns from 1,728 samples
 -Validation: Evaluated on 432 test samples
 -Serialization: Saved as aqi_model.pkl using joblib
+
 ## 📈 Dashboard
 Live Demo
 🔗 Visit: https://aqibyzainabnadeem-nqp79mn4da2ieucv2smgag.streamlit.app/
-Dashboard Sections
+- Dashboard Sections
+
 # 1. 📊 Dashboard Tab
-Current AQI Gauge: Visual indicator with color zones
-Status Badge: Good/Moderate/Unhealthy/Hazardous
-Quick Metrics: PM2.5, PM10, NO₂, O₃ levels
-Health Recommendation: Personalized advice
-48-Hour Trend: Recent AQI history chart
+- Current AQI Gauge: Visual indicator with color zones
+- Status Badge: Good/Moderate/Unhealthy/Hazardous
+- Quick Metrics: PM2.5, PM10, NO₂, O₃ levels
+- Health Recommendation: Personalized advice
+- 48-Hour Trend: Recent AQI history chart
 # 2. 🔮 Forecast Tab
 3-Day Forecast Chart: Interactive time series
 Daily Summary Cards: Color-coded predictions
