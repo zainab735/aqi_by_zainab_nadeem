@@ -282,60 +282,60 @@ Live Demo
 - SHAP analysis confirms PM2.5 contributes most to predictions
 - This aligns with EPA standards where PM2.5 is the primary pollutant
 ## 2. Diurnal Patterns Exist
-AQI peaks during morning (7-9 AM) and evening (6-8 PM) rush hours
-Lowest AQI typically occurs between 2-4 AM
-Pattern suggests traffic-related pollution dominates
+- AQI peaks during morning (7-9 AM) and evening (6-8 PM) rush hours
+- Lowest AQI typically occurs between 2-4 AM
+- Pattern suggests traffic-related pollution dominates
 ## 3. Weekend Effect
-Weekend AQI is typically 10-15% lower than weekdays
-Reduced industrial and traffic activity on weekends
-Saturday and Sunday show similar patterns
+- Weekend AQI is typically 10-15% lower than weekdays
+- Reduced industrial and traffic activity on weekends
+- Saturday and Sunday show similar patterns
 ## 4. Seasonal Variation
-Winter months (Nov-Feb) show higher AQI due to:
-Temperature inversions trapping pollutants
-Increased heating emissions
-Reduced atmospheric mixing
-Summer months show better air quality dispersion
+- Winter months (Nov-Feb) show higher AQI due to:
+- Temperature inversions trapping pollutants
+- Increased heating emissions
+- Reduced atmospheric mixing
+- Summer months show better air quality dispersion
 ## 5. Pollutant Correlations
-PM2.5 and PM10 are highly correlated (r > 0.8)
-NO₂ and O₃ show inverse relationship (photochemical reactions)
-All pollutants contribute to overall AQI calculation
+- PM2.5 and PM10 are highly correlated (r > 0.8)
+- NO₂ and O₃ show inverse relationship (photochemical reactions)
+- All pollutants contribute to overall AQI calculation
 ### 🚀 Future Improvements
 ## Short-term Enhancements
-Additional Features
+- Additional Features
 Weather data (temperature, humidity, wind speed/direction)
 Traffic density data
 Industrial emission data
 Holiday calendar
-Advanced Models
+- Advanced Models
 LSTM (Long Short-Term Memory) for time series
 XGBoost for better performance
 Ensemble methods combining multiple models
-Extended Forecast
+- Extended Forecast
 7-day forecast instead of 3-day
 Confidence intervals for predictions
 Probabilistic forecasting
 ## Long-term Vision
-Multi-city Support
+- Multi-city Support
 Allow users to select different cities
 City-specific model training
 Comparative analysis between cities
-Real-time Alerts
-Email/SMS notifications for hazardous AQI
-Push notifications via mobile app
-Integration with weather apps
-API Development
-REST API for third-party integration
-GraphQL endpoint for flexible queries
-Rate limiting and authentication
-Mobile Application
-iOS and Android apps
-Offline mode with cached predictions
-Location-based alerts
-Advanced Analytics
-Pollution source identification
-Health impact assessment
-Economic cost of pollution
-Policy recommendation engine
+- Real-time Alerts
+  Email/SMS notifications for hazardous AQI
+  Push notifications via mobile app
+  Integration with weather apps
+- API Development
+  REST API for third-party integration
+  GraphQL endpoint for flexible queries
+  Rate limiting and authentication
+- Mobile Application
+  iOS and Android apps
+  Offline mode with cached predictions
+  Location-based alerts
+  Advanced Analytics
+  Pollution source identification
+  Health impact assessment
+  Economic cost of pollution
+  Policy recommendation engine
 ### 📄 Final Report
 ## Executive Summary
 This project successfully implements a complete, serverless Machine Learning pipeline for Air Quality Index forecasting in Islamabad, Pakistan. The system demonstrates best practices in MLOps, from data collection to deployment.
